@@ -23,7 +23,11 @@ emojis = ["!  :grin:", "!  :blush:", "!  :grinning:", "!  :slight_smile:", "!  :
 async def on_message(message):
     if message.author == client.user:
         return
-    if message.content.lower().startswith((
+    if message.content.lower().replace(',', '', 1).startswith("chopper quanto é "):
+        await message.channel.send(eval(message.content[17:]))
+    elif message.content.lower().replace(',', '', 1).startswith("chopper quanto é "):
+        await message.channel.send(eval(message.content[17:]))
+    elif message.content.lower().startswith((
             "oi chopper", "olá chopper", "salve chopper", "eae chopper", "fala chopper", "chopper"
     )):
         await message.channel.send(random.choice(pt_greetings) + random.choice(emojis))
