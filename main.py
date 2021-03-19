@@ -65,10 +65,11 @@ async def on_message(message):
         await message.channel.send("Aprendi.")
         await message.delete(delay=2)
 
-    elif message.content.lower().replace(',', '',
-                                         1).startswith("chopper escolhe "):
-        online_list = [("<@" + str(x.id) + ">") for x in bot.guilds[0].members if
-                       x.status != discord.Status.offline and not x.bot]
+    elif message.content.lower().replace(',', '', 1).startswith("chopper escolhe "):
+        online_list = [
+            ("<@" + str(x.id) + ">") for x in bot.guilds[0].members if x.status != discord.Status.offline
+            and not x.bot
+        ]
         aux = 0
         if message.content[7] == ',':
             aux = 1
@@ -78,29 +79,26 @@ async def on_message(message):
             await message.channel.send(chosen_users)
         except:
             await message.channel.send(
-                "Você escreveu errado ou pediu para eu escolher mais do que o número de usuários online no momento.")
-    elif message.content.lower().replace(',', '',
-                                         1).startswith("chopper gera 1 "):
+                "Você escreveu errado ou pediu para eu escolher mais do que o número de usuários online no momento."
+            )
+
+    elif message.content.lower().replace(',', '', 1).startswith("chopper gera 1 "):
         try:
             lst = search_digit(
-                message.content[:21].replace(',', '') + 's' + message.content[21:31] + 's' + message.content[31:])
-            output_num = random.randrange(lst[1],
-                                          lst[2] + 1)
+                message.content[:21].replace(',', '') + 's' + message.content[21:31] + 's' + message.content[31:]
+            )
+            output_num = random.randrange(lst[1], lst[2] + 1)
             await message.channel.send(output_num)
         except:
-            await message.channel.send(
-                "Eu posso até ser uma rena mas só falo português.")
-    elif message.content.lower().replace(',', '',
-                                         1).startswith("chopper gera "):
+            await message.channel.send("Eu posso até ser uma rena mas só falo português.")
+
+    elif message.content.lower().replace(',', '', 1).startswith("chopper gera "):
         try:
             lst = search_digit(message.content.replace(',', ''))
-            output_lst = [(random.randrange(lst[1],
-                                            lst[2] + 1))
-                          for i in range(lst[0])]
+            output_lst = [(random.randrange(lst[1], lst[2] + 1)) in range(lst[0])]
             await message.channel.send(output_lst)
         except:
-            await message.channel.send(
-                "Eu posso até ser uma rena mas só falo português.")
+            await message.channel.send("Eu posso até ser uma rena mas só falo português.")
 
     elif message.content.lower().replace(',', '').startswith("chopper quanto é "):
         try:
@@ -109,11 +107,13 @@ async def on_message(message):
                 aux = 1
             await message.channel.send(
                 eval(
-                    message.content[17 + aux:].lower().replace(',', '.').replace('?', '').replace('x', '*').replace('^',
-                                                                                                                    '**')))
+                    message.content[17 + aux:].lower().replace(',', '.').replace('?', '').replace('x', '*')
+                    .replace('^', '**')
+                )
+            )
         except:
-            await message.channel.send(
-                "Sei não :confused:")
+            await message.channel.send("Sei não :confused:")
+
     elif message.content.lower().replace(',', '') == "chopper help":
         await message.channel.send(
             "------------------------------------------------------   :deer:   ----------------------------------------"
@@ -126,17 +126,19 @@ async def on_message(message):
             "lista de números aleatoriamente selecionados de acordo com o intervalo fechado [limite inicial,limite "
             "final];\n\n#  Aprende ((chave: valor)) - Armazeno a chave (obs: não esqueça de coloca-los entre "
             "parênteses);\n\n#  (chave) - Respondo com o valor da chave correspondente.\n------------------------------"
-            "-------------------------------------------------------------------------------------")
+            "-------------------------------------------------------------------------------------"
+        )
+
     elif message.content.lower().replace(',', '', 1).startswith("chopper "):
         f = open("bot_db.txt", "r")
         await message.channel.send(check_for_key(f, message))
-    elif message.content.lower().startswith(
-            ("oi chopper", "olá chopper", "salve chopper", "eae chopper",
-             "fala chopper")):
-        await message.channel.send(
-            random.choice(pt_greetings) + random.choice(emojis))
-    elif message.content.lower().startswith(
-            ("hi chopper", "hello chopper", "hoy chopper")):
+
+    elif message.content.lower().startswith((
+            "oi chopper", "olá chopper", "salve chopper", "eae chopper", "fala chopper"
+    )):
+        await message.channel.send(random.choice(pt_greetings) + random.choice(emojis))
+
+    elif message.content.lower().startswith(("hi chopper", "hello chopper", "hoy chopper")):
         await message.channel.send(random.choice(en_greetings) + random.choice(emojis))
 
 
@@ -149,4 +151,4 @@ async def change_status():
 keep_alive()
 
 # get token
-bot.run("ODIxNzY3NTA2MTQxMjQ5NTU4.YFIgoQ.uuKxcRVb6QRxmXueh3hgUyolHqE")
+bot.run("ODIxNzY3NTA2MTQxMjQ5NTU4.YFIgoQ.00Hq69myJF7srWY4Fb_7_cC0jFc")
