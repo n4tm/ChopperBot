@@ -1,7 +1,9 @@
 # ChopperBot
 
 ## Chopper: A Discord Bot made by myself using Discord.py and Flask
-![Chopper icon by classy-blue on DeviantArt](https://user-images.githubusercontent.com/63219861/130169428-51739085-dbf4-4dfd-b8d1-04801298cb12.png)
+<p align="center">
+  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1bc6743-242a-487e-8f1d-f05d31811b08/dauukp3-0e7eaa28-af57-4041-a21e-6e29ec0ad5fa.png/v1/fill/w_800,h_800,strp/chopper_icon_by_classy_blue_dauukp3-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvZDFiYzY3NDMtMjQyYS00ODdlLThmMWQtZjA1ZDMxODExYjA4XC9kYXV1a3AzLTBlN2VhYTI4LWFmNTctNDA0MS1hMjFlLTZlMjllYzBhZDVmYS5wbmciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Va9zOZI2SdUGe-R12iqxChRgIEhJAURS46fU2uNbw4A" width="256">
+</p>
 
 ## What can Chopper do?
 - Arithmetic calculations
