@@ -1,6 +1,6 @@
 # ChopperBot
 
-## Say hello to Chopper: A Discord Bot made by myself using Discord.py and Flask
+## Chopper: A Discord Bot made by myself using Discord.py and Flask
 
 ## What can Chopper do?
 - Arithmetic calculations
