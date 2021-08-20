@@ -1,6 +1,7 @@
 # ChopperBot
 
 ## Chopper: A Discord Bot made by myself using Discord.py and Flask
+![Chopper icon by classy-blue on DeviantArt](https://user-images.githubusercontent.com/63219861/130169428-51739085-dbf4-4dfd-b8d1-04801298cb12.png)
 
 ## What can Chopper do?
 - Arithmetic calculations
