@@ -13,6 +13,10 @@
 - Tell a random joke (in portuguese)
 - "Learn" every message/link/image/video you want (it stores a key and search for its value)
 
+<br>
+
+![chopper_calculator](https://user-images.githubusercontent.com/63219861/130244522-b9f4aa7c-1a8d-4096-9f80-5d758074fda0.gif)![chopper_learn](https://user-images.githubusercontent.com/63219861/130244576-10c2c78a-c4bf-4ab4-a6bd-4a578c1872e1.gif)
+
 ## How to use Chopper
 - Prefix: "Chopper", "chopper" or @Chopper
 - Commands:
