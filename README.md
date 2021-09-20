@@ -1,4 +1,4 @@
-# ChopperBot
+# Chopper Bot
 
 ## Chopper: A Discord Bot made by myself using Discord.py and Flask
 <p align="center">
